@@ -6,9 +6,21 @@
  */
 
 module.exports = {
+		autoCreatedAt: false,
+  	
+  		autoUpdatedAt: false,
 
   attributes: {
+	  	
+  	name:{
+  		type:"string",
+  		required:true
+  	},
+
+    users:{
+      collection:"User",
+      through:"userrole"
+    }
 
   }
 };
-
